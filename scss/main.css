@@ -36,6 +36,10 @@ footer {
 .contai > div > ul > li > a:hover {
   left: 8px;
 }
+.contai > div > ul > li > a::-moz-selection {
+  background-color: red;
+  color: #000;
+}
 .contai > div > ul > li > a::selection {
   background-color: red;
   color: #000;
@@ -107,7 +111,8 @@ body {
   height: 100%;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5490196078) 0%, rgba(0, 0, 0, 0.5490196078) 100%), url(../images/img-1.jpg);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
   z-index: -1;
 }
 
@@ -364,7 +369,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn-hp {
@@ -410,7 +416,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card .front h3 {
   position: absolute;
@@ -470,7 +477,8 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .btn-hp {
     padding: 20px;
@@ -854,6 +862,4 @@ input[type=submit]:active {
   .articles .article .right p.description {
     color: #fff;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=main.css.map */

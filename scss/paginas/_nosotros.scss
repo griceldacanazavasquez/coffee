@@ -1,0 +1,109 @@
+/* --------NOSOTROS----------- */
+
+
+.general-1{
+    // width: 50%;
+    padding: 100px 150px 100px 100px;
+    background-color: #fbf9fa;
+}
+
+.general_1{
+    display: flex;
+}
+.general-3{
+    background-image: url("../images/img-nosotros-3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 79%;
+}
+.general-1 h2{
+    font-size:$fuente-grande;
+    line-height: 70px;
+    color:$color-primario ;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.p{
+    font-size: 16px;
+    color: #414547;
+    margin: 25px 0 45px 0;
+
+
+}
+.btnn-1{
+    display:inline-block;
+    padding: 9px 10px;
+    color: $color-primario;
+    text-transform: uppercase;
+    border:1px solid #050404;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+
+/* ----mediaQ nostrs ------------*/
+@media (min-width:400px) and (max-width: 555px) {
+        header{
+    color: $color-primario;
+    // display: flex;
+    // flex-direction: column;
+        }
+.general{
+    margin: 0;
+    padding: 0;
+     text-align: center;
+    flex-direction: column;
+ 
+}
+.general-1{
+    // width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size:15px;
+
+}
+.general-1 h2 {
+    font-size: 35px;
+}
+.general-3{
+    display: none;
+}
+footer{
+    margin: 0;
+}
+footer .contai{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.contai div{
+    align-items: center;
+}
+.contai h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.contai ul{
+  margin: 0;
+  padding: 0;
+  
+} 
+div h2{
+    text-align: center;
+}
+div form{
+    margin:10px;
+    padding: 8px;
+}
+ .text{
+    align-items: center;
+}
+form button{
+   padding:4px; 
+}
+
+}

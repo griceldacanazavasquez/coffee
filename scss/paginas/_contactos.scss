@@ -1,0 +1,160 @@
+*
+{
+	// margin: 0;
+	padding: 0;
+	// box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box 
+{
+    position: absolute;
+	width: 380px;
+	height: 420px;
+	background: $color-primario;
+	border-radius: 8px;
+	overflow: hidden;
+	margin:0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	
+&::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#90825b,#90825b);
+	animation: animate 6s linear infinite;
+}
+&::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,$color-secundario,$color-secundario);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+form 
+{
+	position: absolute;
+	inset: 2px;
+	background: $color-primario;
+	padding: 50px 40px;
+	border-radius: 8px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+
+ & h2 {
+	color:$color-secundario;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+}
+.inputBox 
+{
+	position: relative;
+	width: 300px;
+	margin-top: 35px;
+
+& input 
+{
+	position: relative;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: $color-primario;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index: 10;
+}
+& span 
+{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: $color-texto;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+& input:valid ~ span,
+& input:focus ~ span 
+{
+	color:$color-secundario;
+	transform: translateX(0px) translateY(-34px);
+	font-size: 0.75em;
+}
+& i 
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background:$color-secundario;
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+& input:valid ~ i,
+& input:focus ~ i 
+{
+	height: 44px;
+}
+}
+input[type="submit"]
+{
+	border: none;
+	outline: none;
+	padding: 11px 25px;
+	background:$color-secundario;
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: 600;
+	width: 100px;
+	margin-top: 30px;
+}
+input[type="submit"]:active 
+{
+	opacity: 0.8;
+}
+@media (min-width:400px) and (max-width: 555px) {
+	body{
+		background-color: #1a1818;
+	
+	}
+
+}

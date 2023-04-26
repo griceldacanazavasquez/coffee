@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=  "Placer que deriva de una taza de café ">
+    <!-- aos----- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Productos</title>
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +19,15 @@
 <body>
   <div class="hira">
 
+    
     <video autoplay loop muted plays-inline class="back-video">
         <source src="../images/video-1.mp4" type="video/mp4">
     </video>
   </div>
 <!-- ----------------------- -->
 <div class="btn-hp">
-  <h2>NUESTROS CAFÉS</h2>
-  <p>Viví tu experiencia Nespresso disfrutando desde un espresso afrutado y
+  <h2 data-aos="fade-left">NUESTROS CAFÉS</h2>
+  <p data-aos="fade-left">Viví tu experiencia Nespresso disfrutando desde un espresso afrutado y
     suave hasta el ristretto más intenso, con o sin leche.
   </p>
 </div>
@@ -32,7 +36,9 @@
  <section class="section">
   <div class="card">
       <div class="face front">
-          <img src="../images/img-productos-2.jpg" alt="">
+          <img data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" src="../images/img-productos-2.jpg" alt="">
           <h3>coffee</h3>
       </div>
       <div class="face back">
@@ -46,7 +52,9 @@
 
   <div class="card">
       <div class="face front">
-          <img src="../images/img-productos-3.jpg" alt="">
+          <img data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" src="../images/img-productos-3.jpg" alt="">
           <h3>coffee</h3>
       </div>
       <div class="face back">
@@ -60,7 +68,9 @@
 
   <div class="card">
       <div class="face front">
-          <img src="../images/img~inicio-1.jpg" alt="">
+          <img data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" src="../images/img~inicio-1.jpg" alt="">
           <h3>capuchino</h3>
       </div>
       <div class="face back">
@@ -76,11 +86,13 @@
 <section class="section">
   <div class="card">
       <div class="face front">
-          <img src="../images/img-productos-2.jpg" alt="">
+          <img  data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" src="../images/img-productos-2.jpg" alt="">
           <h3>coffee</h3>
       </div>
       <div class="face back">
-          <h3>Espresso</h3>
+          <h3>ESPRESSO CLIFF HANGER</h3>
           <p>Pequeña obra maestra en taza, preparada al momento, con el fin de apreciar plenamente los aromas y su complejo sabor.</p>
           <div class="link">
               <a href="#">Details</a>
@@ -90,7 +102,9 @@
 
   <div class="card">
       <div class="face front">
-          <img src="../images/img-productos-3.jpg" alt="">
+          <img data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" src="../images/img-productos-3.jpg" alt="">
           <h3>coffee</h3>
       </div>
       <div class="face back">
@@ -104,7 +118,9 @@
 
   <div class="card">
       <div class="face front">
-          <img src="../images/img~inicio-1.jpg" alt="">
+          <img data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" src="../images/img~inicio-1.jpg" alt="">
           <h3>capuchino</h3>
       </div>
       <div class="face back">
@@ -153,15 +169,14 @@
       </div>
       <div>
         <h2>Newsletter</h2>
-        <form>
-          <input type="text" placeholder="Enter your text" />
-          <button>Search</button>
-        </form>
       </div>
     </div>
   </footer>
 
-
-
+<!-- aos de animaciones----->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

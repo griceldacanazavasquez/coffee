@@ -4,33 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=  "Placer que deriva de una taza de café">
     <title>Contactos</title>
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-    <form class="form">
-        <h2 class="form__title">Inicia Sesión</h2>
-        <p class="form__paragraph">¿Aún no tienes una cuenta? <a href="#" class="form__link">Entra aquí</a></p>
-    
-        <div class="form__container">
-            <div class="form__group">
-                <input type="text" id="name" class="form__input" placeholder=" ">
-                <label for="name" class="form__label">Nombre:</label>
-                <span class="form__line"></span>
-            </div>
-            <div class="form__group">
-                <input type="text" id="user" class="form__input" placeholder=" ">
-                <label for="user" class="form__label">Usuario:</label>
-                <span class="form__line"></span>
-            </div>
-            <div class="form__group">
-                <input type="text" id="password" class="form__input" placeholder=" ">
-                <label for="password" class="form__label">Contraseña:</label>
-                <span class="form__line"></span>
-            </div>
-    
-            <input type="submit" class="form__submit" value="Entrar">
-        </div>
-    </form>   
+	
+    <div class="box">
+		<form autocomplete="off">
+			<h2>Sign in</h2>
+			<div class="inputBox">
+				<input type="texts" required="required">
+				<span>Userame</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required">
+				<span>Password</span>
+				<i></i>
+			</div>
+			
+			<input type="submit" value="Login">
+		</form>
+	</div>
+
 </body>
 </html>

@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=  "Placer que deriva de una taza de café ">
+    <!-- aos----- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>COFFEE</title>
     <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 <body>
     <header class="hero">
         <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">COFFEE</h2>
-            </div>
-
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
                     <a href="./inicio.html" class="nav__links" target="_blank">Inicio</a>
@@ -40,37 +39,43 @@
         </nav>
 <!-- ------------------------ -->
         <section class="hero__container container">
-            <h1 class="hero__title">coffee</h1>
-            <p class="hero__paragraph">Disfrutá la mejor experiencia de café con nuestros servicios.</p>
-            <a href="./paginas/productos.html" class="cta">menu</a>
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="hero__title">coffee</h1>
+            <p data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="hero__paragraph">Disfrutá la mejor experiencia de café con nuestros servicios.</p>
+            <a data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" href="./paginas/productos.html" class="cta">menu</a>
         </section>
     </header>
 <!-- ------------------------- -->
 <div class="contenedor">
     <a href="#">
          <figure>
-             <img src="./images/img~inicio.jpg">
+             <img data-aos="fade-left" src="./images/img~inicio.jpg">
              <div class="capa">
-                 <h3>SLee </h3>
+                 <h3>Pensamos </h3>
                  <p>Buscamos conectar, crear y lograr. Queremos construir y ser parte del mundo en el que queremos vivir.</p>
              </div>
          </figure>
      </a>
      <a href="#">
         <figure>
-            <img src="./images/img~inicio-1.jpg">
+            <img data-aos="fade-right" src="./images/img~inicio-1.jpg">
             <div class="capa">
-                <h3>SLee </h3>
+                <h3>Compartimos</h3>
                 <p>Amamos el buen café, y nos fascina lo que produce: las pláticas, las ideas, los lazos y los momentos.   </p>
             </div>
         </figure>
     </a>
     <a href="#">
         <figure>
-            <img src="./images/img~inicio-2.jpg">
+            <img data-aos="fade-left" src="./images/img~inicio-2.jpg">
             <div class="capa">
-                <h3>SLee </h3>
-                <p>Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Maiores, vero!</p>
+                <h3>Disfrutamos</h3>
+                <p> mejorar el día a día</p>
             </div>
         </figure>
     </a>
@@ -78,8 +83,13 @@
 
 <!------------------------- -->
     <sección clase="about">
-        <h2 class="subtitle">Café de origen único</h2>
-        <p class="about__paragraph">Para poder mimar y tratar mejor estos cafés de gran calidad, junto con la pasión que veíamos a nuestros clientes por mejorar en su día a día al elaborar el café, decidimos mejorar nuestra formación en academias especializadas en café por todo el mundo, y así transmitir esos conocimientos tanto a nuestros clientes como a los aficionados al café.</p>
+        <h2 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="subtitle">Café de origen único</h2>
+        <p data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500" class="about__paragraph">Para poder mimar y tratar mejor estos cafés de gran calidad, junto con la pasión que veíamos a nuestros clientes por mejorar en su día a día al elaborar el café, decidimos mejorar nuestra formación en academias especializadas en café por todo el mundo, y así transmitir esos conocimientos tanto a nuestros clientes como a los aficionados al café.</p>
     </seccion>
     
       
@@ -114,12 +124,13 @@
       </div>
       <div>
         <h2>Newsletter</h2>
-        <form>
-          <input type="text" placeholder="Enter your text" />
-          <button>Search</button>
-        </form>
       </div>
     </div>
   </footer>
+  <!-- aos de animaciones----->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

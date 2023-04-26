@@ -1,0 +1,106 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://img.freepik.com/free-photo/top-view-roasted-coffee-beans-scattered-brown-paper-texture-background-with-copy-space_141793-7136.jpg?w=1380&t=st=1682218757~exp=1682219357~hmac=989265d9ff849f6c1c2822938ea08e6533569d26060377eecb50546928aedbbc');
+    background-size: cover;
+    color: $color-fondos;
+
+
+
+& h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+& h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid $color-fondos;
+}
+& a{
+    padding: 10px 20px;
+    background-color:transparent;
+    color:$color-fondos;
+    border:1px solid $color-primario ;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+}
+// ----------------------------
+.articles{
+
+margin-top:40px;
+display: flex;
+& .article{
+    
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+& .article .left img{
+    height: 300px;
+    width: 500px;
+  }
+& .article .right {
+    margin-left: 40px;
+    max-width: 50%;
+    padding: 20px;
+  }
+& .article .right p.date{
+    color: $color-texto;
+  }
+& .article .right p.description{
+    color: #2d2d2d;
+  
+  }
+}
+
+
+@media  (max-width: 555px) {
+  .blog a{
+        padding: 5px 10px;
+        background-color:transparent;
+        color:$color-primario;
+        border:1px solid $color-primario;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        outline:none;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .articles{
+    display: flex;
+    flex-direction: column;
+  
+    & .article .left img{
+    height: 100%;
+    width:100%;
+  }
+
+
+  & .article .right{
+    margin: 0px;
+    max-width: 100%;
+    color: $color-fondos;
+  }
+ 
+  & .article .right p.description{
+    color: $color-fondos;
+}
+    }
+}
+// @media  (max-width:768px) {
+//     .articles{
+//       margin:0;
+      
+//     }
+//     }
+
+    
