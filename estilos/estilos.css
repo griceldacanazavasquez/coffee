@@ -194,7 +194,7 @@ body {
   position: relative;
   height: 200px;
   cursor: pointer;
-  width: 320px;
+  width: auto;
   overflow: hidden;
   border-radius: 6px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
@@ -262,7 +262,7 @@ body {
 }
 
 /* -----footer de inicio -----------*/
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .hero {
     width: 100%;
     height: 100vh;
@@ -280,8 +280,17 @@ body {
     grid-template-rows: 100px 1fr;
     color: #fff;
   }
+  figure {
+    height: 250px;
+  }
+  .contenedor figure {
+    width: 80%;
+  }
+  .contenedor figure .capa p {
+    font-size: 12px;
+  }
 }
-/* ----mediaQ nostrs ------------*/
+/* ----mediaQuerie ------------*/
 @media (min-width: 400px) and (max-width: 555px) {
   .nav__logo {
     display: none;
@@ -456,7 +465,16 @@ body {
   transform: perspective(600px) rotateY(360deg);
 }
 
-/* ----mediaQ nostrs ------------*/
+/* ----mediaQuerie ------------*/
+@media (max-width: 850px) {
+  .card .back h3 {
+    font-size: 25px;
+  }
+  .card .back p {
+    font-size: 12px;
+  }
+}
+/* ----mediaQuerie ------------*/
 @media (min-width: 400px) and (max-width: 555px) {
   .hira {
     position: relative;
@@ -533,18 +551,6 @@ body {
 .general-1 {
   padding: 100px 150px 100px 100px;
   background-color: #fbf9fa;
-}
-
-.general_1 {
-  display: flex;
-}
-
-.general-3 {
-  background-image: url("../images/img-nosotros-3.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 79%;
 }
 
 .general-1 h2 {
@@ -801,16 +807,17 @@ input[type=submit]:active {
 }
 
 .articles {
-  margin-top: 40px;
-  display: flex;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .articles .article {
   padding: 15px;
-  margin-bottom: 30px;
 }
 .articles .article .left img {
-  height: 300px;
-  width: 500px;
+  height: 370px;
+  width: 100%;
+  border-radius: 15px;
 }
 .articles .article .right {
   margin-left: 40px;
@@ -824,6 +831,41 @@ input[type=submit]:active {
   color: #2d2d2d;
 }
 
+@media (min-width: 555px) and (max-width: 1170px) {
+  .articles {
+    grid-template-columns: minmax(300px 1fr) 1fr;
+  }
+  .articles .article .left img {
+    height: 250px;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .articles .article .right {
+    height: 250px;
+    margin-left: 0;
+    padding: 0%;
+    max-width: none;
+  }
+  .articles .article .right h1 {
+    font-size: 20px;
+  }
+  .articles .article .right .description {
+    font-size: 14px;
+  }
+  .articles .article .right .auteur {
+    font-size: 12px;
+  }
+  .contai {
+    margin: auto;
+    width: auto;
+  }
+  .contai > div > h2 {
+    font-size: 18px;
+  }
+  .contai > div > ul > li > a {
+    font-size: 18px;
+  }
+}
 @media (max-width: 555px) {
   .blog a {
     padding: 5px 10px;
@@ -845,6 +887,7 @@ input[type=submit]:active {
   .articles .article .left img {
     height: 100%;
     width: 100%;
+    border-radius: 15px;
   }
   .articles .article .right {
     margin: 0px;

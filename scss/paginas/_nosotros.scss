@@ -7,16 +7,16 @@
     background-color: #fbf9fa;
 }
 
-.general_1{
-    display: flex;
-}
-.general-3{
-    background-image: url("../images/img-nosotros-3.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 79%;
-}
+// .general_1{
+//     display: flex;
+// }
+// .general-3{
+//     background-image: url("../images/img-nosotros-3.jpg");
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     width: 79%;
+// }
 .general-1 h2{
     font-size:$fuente-grande;
     line-height: 70px;
@@ -71,6 +71,8 @@
 .general-3{
     display: none;
 }
+
+
 footer{
     margin: 0;
 }

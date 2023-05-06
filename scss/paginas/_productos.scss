@@ -128,8 +128,18 @@
     transform: perspective(600px) rotateY(360deg);
 }
 }
+/* ----mediaQuerie ------------*/
 
-/* ----mediaQ nostrs ------------*/
+@media  (max-width:850px) {
+    .card .back h3{
+        font-size: 25px;
+    }
+.card .back p{
+    font-size: 12px;
+}
+}
+
+/* ----mediaQuerie ------------*/
 
 @media (min-width:400px) and (max-width: 555px) {
     .hira{
@@ -198,7 +208,6 @@
       padding: 0;
       
     } 
-
     
     div h2{
         text-align: center;
